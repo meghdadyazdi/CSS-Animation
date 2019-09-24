@@ -1,0 +1,27 @@
+.box{
+    background-color: #ff4500;
+    height: 50px;
+    width: 50px;
+    top: 0px;
+    margin: 100px;
+    border-radius: 50px;
+    position: relative; /*very important*/
+    animation-name: jump;
+    animation-direction: alternate;
+    animation-timing-function: Fast Out, Linear In;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes jump {
+    from{
+        top: 0;
+        background-color: #ff4500;
+    }
+    to{
+        top:250px;
+        background-color: #1f75fe;
+    }
+}
+
